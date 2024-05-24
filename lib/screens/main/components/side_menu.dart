@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:something/screens/dashboard/components/contact.dart';
+import 'package:something/screens/dashboard/components/financial.dart';
+import 'package:something/screens/dashboard/components/insuarance.dart';
 import 'package:something/screens/dashboard/components/mortage.dart';
+import 'package:something/screens/dashboard/components/mortage_closing.dart';
+import 'package:something/screens/dashboard/components/nontangibleassets.dart';
+import 'package:something/screens/dashboard/components/subscriptions.dart';
+import 'package:something/screens/dashboard/components/taxes.dart';
 import 'package:something/screens/dashboard/components/utilities.dart';
 import 'package:something/screens/dashboard/dashboard_screen.dart';
 import 'package:something/screens/main/main_screen.dart';
@@ -57,6 +64,76 @@ class SideMenu extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => MortagePage()),
+              );
+            },
+          ),
+          DrawerListTile(
+            title: "Mortage Closing",
+            svgSrc: "assets/icons/menu_dashboard.svg",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MortageClosingPage()),
+              );
+            },
+          ),
+          DrawerListTile(
+            title: "Subscription",
+            svgSrc: "assets/icons/menu_dashboard.svg",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SubscriptionPage()),
+              );
+            },
+          ),
+          DrawerListTile(
+            title: "Non Tangible Assets",
+            svgSrc: "assets/icons/menu_dashboard.svg",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => NonTangibleAssetPage()),
+              );
+            },
+          ),
+          DrawerListTile(
+            title: "Financial Institutions",
+            svgSrc: "assets/icons/menu_dashboard.svg",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FinancialPage()),
+              );
+            },
+          ),
+          DrawerListTile(
+            title: "Taxes",
+            svgSrc: "assets/icons/menu_dashboard.svg",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TaxesPage()),
+              );
+            },
+          ),
+          DrawerListTile(
+            title: "Insuarance",
+            svgSrc: "assets/icons/menu_dashboard.svg",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => InsuarancePage()),
+              );
+            },
+          ),
+          DrawerListTile(
+            title: "Contacts",
+            svgSrc: "assets/icons/menu_dashboard.svg",
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ContactPage()),
               );
             },
           ),
